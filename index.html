@@ -23,43 +23,51 @@
     <button class="button-autoclicker" id="autoclicker-btn" style="display: none;"><span class="text">Toggle Autoclicker</span></button>
     <button class="button-64" id="shop-btn" role="button"><span class="text">Shop</span></button>
     
-    <!-- Интерфейс магазина -->
-    <div id="shop" style="display: none;">
+<!-- Модальне вікно -->
+<div id="overlay"></div>
+<div id="shop-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
         <h2>Shop</h2>
-
-        <button id="buy-tank-btn">Buy New Tank - Cost: <span id="upgrade-cost">50</span> points</button>
+        <button id="buy-tank-btn" class="shop-btn">Buy New Tank - Cost: <span id="upgrade-cost">50</span> points</button>
         
         <!-- Дополнительные улучшения -->
         <div id="tank-upgrades">
             <h3>Tank Upgrades</h3>
             <p>
                 New Gun: 
-                <button id="gun-upgrade-btn">Buy Gun (Cost: <span id="gun-cost">100</span>)</button>
+                <button id="gun-upgrade-btn" class="shop-btn">Buy Gun (Cost: <span id="gun-cost">100</span>)</button>
                 <span>Level: <span id="gun-level">0</span></span>
             </p>
             <p>
                 New Turret: 
-                <button id="turret-upgrade-btn">Buy Turret (Cost: <span id="turret-cost">200</span>)</button>
+                <button id="turret-upgrade-btn" class="shop-btn">Buy Turret (Cost: <span id="turret-cost">200</span>)</button>
                 <span>Level: <span id="turret-level">0</span></span>
             </p>
             <p>
                 New Radio: 
-                <button id="radio-upgrade-btn">Buy Radio (Cost: <span id="radio-cost">300</span>)</button>
+                <button id="radio-upgrade-btn" class="shop-btn">Buy Radio (Cost: <span id="radio-cost">300</span>)</button>
                 <span>Level: <span id="radio-level">0</span></span>
             </p>
             <p>
                 New Engine: 
-                <button id="engine-upgrade-btn">Buy Engine (Cost: <span id="engine-cost">400</span>)</button>
+                <button id="engine-upgrade-btn" class="shop-btn">Buy Engine (Cost: <span id="engine-cost">400</span>)</button>
                 <span>Level: <span id="engine-level">0</span></span>
             </p>
             <p>
                 New Tracks: 
-                <button id="tracks-upgrade-btn">Buy Tracks (Cost: <span id="tracks-cost">500</span>)</button>
+                <button id="tracks-upgrade-btn" class="shop-btn">Buy Tracks (Cost: <span id="tracks-cost">500</span>)</button>
                 <span>Level: <span id="tracks-level">0</span></span>
             </p>
         </div>
     </div>
-    
+</div>
+
+<!-- Повідомлення -->
+<div id="messages"></div>
+
+
+
     <!-- Кнопка для сброса очков и улучшений -->
     <button class="button-64" id="reset-btn" role="button"><span class="text">Reset Points & Upgrades</span></button>
 
