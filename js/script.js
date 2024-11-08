@@ -225,7 +225,7 @@ tracksUpgradeBtn.addEventListener("click", () => {
 
 resetBtn.addEventListener("click", () => {
     points = 0;
-    pointsPerClick = 100;
+    pointsPerClick = 1;
     upgradeCost = 1000;
     gunLevel = 0;
     turretLevel = 0;
