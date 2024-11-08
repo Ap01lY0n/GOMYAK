@@ -28,7 +28,20 @@ body {
         background-position: 0% 0%;
     }
 }
+/* Класс для эффекта угасания текста */
+.fade-out {
+    animation: fadeOut 2s ease forwards;
+}
 
+/* Анимация угасания текста */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .wave {
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
@@ -138,4 +151,163 @@ body {
     min-width: 196px;
   }
 }
+#shop {
+    display: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
 
+/* Заголовок магазина */
+#shop h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* Описание улучшения */
+#shop p {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+/* Кнопка улучшения */
+#upgrade-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Стили при наведении и нажатии для кнопки улучшения */
+#upgrade-btn:hover {
+    background-image: linear-gradient(144deg, #5B42F3, #AF40FF 50%, #00DDEB);
+}
+
+#upgrade-btn:active {
+    transform: scale(0.95);
+}
+
+/* Отображение уровня и стоимости улучшения */
+#upgrade-level, #upgrade-cost {
+    font-weight: 700;
+}
+
+/* Стили для кнопки "Магазин" */
+#shop-btn {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(144deg, #FF8C00, #FF4500 50%, #FFD700);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(255, 140, 0, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    font-family: 'Phantomsans', sans-serif;
+    font-size: 20px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#shop-btn:active,
+#shop-btn:hover {
+    outline: 0;
+}
+
+#shop-btn span {
+    background-color: rgb(45, 5, 5);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+#shop-btn:hover span {
+    background: none;
+}
+/* Стиль для контейнера танка */
+/* Стиль для контейнера танка */
+.main-tank {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Отступ между танком и счётчиком */
+}
+
+/* Стиль для изображения танка */
+#click-image {
+    width: 600px; /* Устанавливаем ширину 600 пикселей */
+    height: auto; /* Сохраняет пропорции изображения */
+    transition: transform 0.1s ease; /* Анимация для эффекта уменьшения при клике */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+/* Эффект уменьшения при нажатии */
+#click-image:active {
+    transform: scale(0.95); /* Уменьшение изображения до 95% от исходного размера */
+}
+.button-autoclicker {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(144deg, #00FF7F, #00FA9A 50%, #32CD32);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(0, 255, 127, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    font-family: 'Phantomsans', sans-serif;
+    font-size: 20px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-autoclicker:active,
+.button-autoclicker:hover {
+    outline: 0;
+}
+
+.button-autoclicker span {
+    background-color: rgb(5, 45, 5);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.button-autoclicker:hover span {
+    background: none;
+}
