@@ -15,7 +15,7 @@ const messages = document.getElementById("messages");
 const resetBtn = document.getElementById("reset-btn");
 
 let points = 0;
-let pointsPerClick = 100;
+let pointsPerClick = 1;
 let upgradeCost = 1000;
 let gunLevel = 0;
 let turretLevel = 0;
