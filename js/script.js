@@ -232,11 +232,13 @@ resetBtn.addEventListener("click", () => {
     radioLevel = 0;
     engineLevel = 0;
     tracksLevel = 0;
+    upgradeLevel = 1; 
     clearInterval(autoclickInterval);
     autoclickInterval = null;
     autoclickSpeed = 1000;
     localStorage.clear();
     updateDisplay();
+    updateClickImage(); 
     showMessage("Game reset!");
 });
 
