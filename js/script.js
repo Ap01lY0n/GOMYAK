@@ -29,16 +29,16 @@ let autoclickerEnabled = false;
 let autoclickerInterval;
 
 const upgradeImages = [
-    "/img/ms-1.png",
-    "/img/bt-2.png",
-    "/img/bt-5.png",
-    "/img/t-28.png",
-    "/img/kv-1.png",
-    "/img/kv-1c.png",
-    "/img/is-1.png",
-    "/img/is-3.png",
-    "/img/ob-257.png",
-    "/img/is-7.png"
+    "../img/ms-1.png",
+    "../img/bt-2.png",
+    "../img/bt-5.png",
+    "../img/t-28.png",
+    "../img/kv-1.png",
+    "../img/kv-1c.png",
+    "../img/is-1.png",
+    "../img/is-3.png",
+    "../img/ob-257.png",
+    "../img/is-7.png"
 ];
 
 function updateDisplay() {
